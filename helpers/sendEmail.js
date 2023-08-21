@@ -20,8 +20,6 @@ const sendEmail = async ({ to, subject, html }) => {
   };
 
   const transport = nodemailer.createTransport(nodeMailerConfig);
-
-  console.log("email", email);
   await transport.sendMail(email);
 };
 
