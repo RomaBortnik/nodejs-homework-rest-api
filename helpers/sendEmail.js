@@ -3,7 +3,7 @@ const { META_PASSWORD } = process.env;
 
 const sendEmail = async ({ to, subject, html }) => {
   const email = {
-    from: "bortnik25051998@meta.ua",
+    from: "dariazhekalo@meta.ua",
     to,
     subject,
     html,
@@ -14,7 +14,7 @@ const sendEmail = async ({ to, subject, html }) => {
     port: 465,
     secure: true,
     auth: {
-      user: "bortnik25051998@meta.ua",
+      user: "dariazhekalo@meta.ua",
       pass: META_PASSWORD,
     },
   };
